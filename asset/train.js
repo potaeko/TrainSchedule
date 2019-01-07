@@ -70,9 +70,10 @@ $("form input").keyup(function() {
       }
   });
 });
- 
 
-
+// ===========================================
+//         Click Event, Submit Button
+//============================================
 $("#submit_id").on("click", function(event) {
   event.preventDefault();
   //Disable submit button after clicked
@@ -115,7 +116,7 @@ $("#submit_id").on("click", function(event) {
 
 database.ref('/trains').on("child_added", function(childSnapshot) {
 
-  // Store everything into a variable.
+  // Store data into a variable.
   var newName = childSnapshot.val().trName;
   var newDestination = childSnapshot.val().trDestination;
   var newFirstTrainTime = childSnapshot.val().trFirstTrainTime;
@@ -147,3 +148,10 @@ function update() {
 }
 
 setInterval(update, 1000);
+
+// ===========================================
+//        Refresh Page Every 1 Min
+//============================================
+setTimeout(function(){
+  window.location.reload();
+}, 60000);
