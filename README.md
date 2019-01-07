@@ -1,1 +1,10 @@
 # TrainSchedule
+Build with HTML, jQuery, Bootstrap, Firebase database and calculate time with moment.js</br></br>
+Style with jumbotron, Bootstrap panel, Bootstrap responsive. </br>
+-Train Schedule App for Admin to add train time.</br>
+-Store data can only delete from Firebase.
+-Show clock with moment.js</br>
+-Render real time database with Firebase.</br>
+-Form can not submit until all form filled.</br>
+-Form text and number validation.</br>
+-Page automatically refresh every 1 minute to get a real time train schedule.
