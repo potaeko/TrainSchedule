@@ -58,7 +58,7 @@
               <div class="panel panel-primary">
                   <!-- Header -->
                   <div class="panel-heading text-center">
-                      <h3 class="panel-title">Add Train</h3>
+                      <h3 class="panel-title">Add Train (Admin)</h3>
                   </div>
                   <div class="panel-body">
                       <form autocomplete="off">
@@ -75,7 +75,8 @@
                           <!-- First Train Time -->
                           <div class="form-group">
                               <label for="firstTrainTime">First Train Arrival Time (HH:mm - military time)</label>
-                              <input class="form-control" id="firstTrainTime" type="number">
+                              <input class="form-control" id="firstTrainTime" type="number" maxlength="4" onKeyDown="limitText(this,4);" 
+                              onKeyUp="limitText(this,4);">
                           </div>
                           <!-- Train Arrive Frequency -->
                           <div class="form-group">

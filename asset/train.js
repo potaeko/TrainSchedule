@@ -58,6 +58,7 @@ $("form input").keyup(function() {
 
   $("form input").each(function() {
     event.preventDefault();
+     
       if ($(this).val() == '') {
         console.log(empty)
         empty = true;
@@ -70,6 +71,14 @@ $("form input").keyup(function() {
       }
   });
 });
+
+
+function limitText(limitField, limitNum) {
+  if (limitField.value.length > limitNum) {
+      limitField.value = limitField.value.substring(0, limitNum);
+  }
+};
+
 
 // ===========================================
 //         Click Event, Submit Button
@@ -85,14 +94,14 @@ $("#submit_id").on("click", function(event) {
   
  // Creates local "temporary" object for holding trains data
   var newtr = {
-    trName: trName,
-    // trName,
-    trDestination: trDestination,
-    // trDestination,
-    trFirstTrainTime: trFirstTrainTime,
-    // trFirstTrainTime,
-    trFrequency: trFrequency,
-    // trFrequency,
+    // trName: trName,
+    trName,
+    // trDestination: trDestination,
+    trDestination,
+    // trFirstTrainTime: trFirstTrainTime,
+    trFirstTrainTime,
+    // trFrequency: trFrequency,
+    trFrequency,
     dateAdded: firebase.database.ServerValue.TIMESTAMP
   };
 
