@@ -60,7 +60,7 @@ $("form input").keyup(function() {
     event.preventDefault();
      
       if ($(this).val() == '') {
-        console.log(empty)
+      
         empty = true;
       }
       if (empty) {
@@ -72,13 +72,14 @@ $("form input").keyup(function() {
   });
 });
 
-
+// ===========================================
+//      First Train Time Input Length Limit
+//============================================
 function limitText(limitField, limitNum) {
   if (limitField.value.length > limitNum) {
       limitField.value = limitField.value.substring(0, limitNum);
   }
 };
-
 
 // ===========================================
 //         Click Event, Submit Button
@@ -105,7 +106,6 @@ $("#submit_id").on("click", function(event) {
     dateAdded: firebase.database.ServerValue.TIMESTAMP
   };
 
-  
   // Upload new train data to Firebase 'trains' database
   database.ref('/trains').push(newtr);
 
@@ -141,7 +141,11 @@ database.ref('/trains').on("child_added", function(childSnapshot) {
   var trMinutesTillTrain = trFrequency -trRemainder;
   var nextTrain = moment().add(trMinutesTillTrain,"minutes");
   var nextArrival = moment(nextTrain).format("HH:mm");
-  console.log(nextArrival)
+  //Checking First Train Arrival Time-Input
+  if(isNaN(trMinutesTillTrain)){
+    trMinutesTillTrain="Please Check You Input";
+  }
+  // console.log(nextArrival)
   // Add each train's data into the table
   $("#train-table> tbody").append("<tr><td>" + newName + "</td><td>" + newDestination + "</td><td>" +
   newFrequency + "</td><td>" + nextArrival +"</td><td>"+trMinutesTillTrain+"</td></tr>");

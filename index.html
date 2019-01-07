@@ -74,14 +74,14 @@
                           </div>
                           <!-- First Train Time -->
                           <div class="form-group">
-                              <label for="firstTrainTime">First Train Arrival Time (HH:mm - military time)</label>
-                              <input class="form-control" id="firstTrainTime" type="number" maxlength="4" onKeyDown="limitText(this,4);" 
+                              <label for="firstTrainTime">First Train Arrival Time (HHmm - military time)</label>
+                              <input class="form-control" id="firstTrainTime" type="number" onKeyDown="limitText(this,4);" 
                               onKeyUp="limitText(this,4);">
                           </div>
                           <!-- Train Arrive Frequency -->
                           <div class="form-group">
                               <label for="frequency">Frequency (min)</label>
-                              <input class="form-control" id="frequency" type="number">
+                              <input class="form-control" id="frequency" type="number" onKeyDown="limitText(this,3);" onKeyUp="limitText(this,3);">
                           </div>
                           <!-- Submit Button -->
                           <button class="btn btn-primary" id="submit_id" value="submit" disabled="disabled" type="submit">Submit</button>
