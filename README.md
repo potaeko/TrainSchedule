@@ -6,5 +6,6 @@ Style with jumbotron, Bootstrap panel, Bootstrap responsive. </br>
 -Show clock with moment.js</br>
 -Render real time database with Firebase.</br>
 -Form can not submit until all form filled.</br>
--Form text and number validation.</br>
+-Form input text and number validation.</br>
+-Form input number length limit.</br> 
 -Page automatically refresh every 1 minute to get a real time train schedule.
