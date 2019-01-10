@@ -9,7 +9,7 @@ Uses Firebase to host a globally available set of data that will be retrieved an
 [Moment.js][https://momentjs.com/]
 
 -Train Schedule App for Admin to add train time.</br>
--Store data can only delete from Firebase.
+-Store data can only delete from Firebase.</br>
 -Show clock with moment.js</br>
 -Render real time database with Firebase.</br>
 -Form can not submit until all form filled.</br>
