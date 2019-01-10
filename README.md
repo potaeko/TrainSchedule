@@ -1,6 +1,6 @@
 # TrainSchedule
-Build with HTML, jQuery, Bootstrap, Firebase database and calculate time with moment.js</br></br>
-Style with jumbotron, Bootstrap panel, Bootstrap responsive. </br></br>
+## Build with HTML, jQuery, Bootstrap, Firebase database and calculate time with moment.js</br></br>
+## Style with jumbotron, Bootstrap panel, Bootstrap responsive. </br></br>
 -Train Schedule App for Admin to add train time.</br>
 -Store data can only delete from Firebase.
 -Show clock with moment.js</br>
