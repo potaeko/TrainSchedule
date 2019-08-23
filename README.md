@@ -1,6 +1,6 @@
 # TrainSchedule
 ## Created by
----
+
 ## HTML, jQuery, Bootstrap, Firebase database
 ## calculate time with moment.js. Style with jumbotron, Bootstrap panel and responsive. </br></br>
 
