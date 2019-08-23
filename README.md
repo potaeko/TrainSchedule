@@ -1,7 +1,6 @@
-# TrainSchedule
-## Created by
+# Train Schedule
 
-## HTML, jQuery, Bootstrap, Firebase database
+## Created with HTML, jQuery, Bootstrap, Firebase database
 ## calculate time with moment.js. Style with jumbotron, Bootstrap panel and responsive. </br></br>
 
 This is a Firebase backed train schedule application. It uses HTML, CSS and jQuery to render the schedule and admin panel on the web page.
@@ -12,7 +11,7 @@ Uses Firebase to host a globally available set of data that will be retrieved an
 1.[Firebase](https://firebase.google.com/docs/web/setup) \
 2.[Moment.js](https://momentjs.com)
 
-## How Train Schedule App works
+## How Train Schedule works
 -User can add new train time to the table.</br>
 -Store data can only delete from Firebase.</br>
 -Show clock with moment.js</br>
