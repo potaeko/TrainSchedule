@@ -143,7 +143,7 @@ database.ref('/trains').on("child_added", function(childSnapshot) {
   var nextArrival = moment(nextTrain).format("HH:mm");
   //Checking First Train Arrival Time-Input
   if(isNaN(trMinutesTillTrain)){
-    trMinutesTillTrain="Please Check You Input";
+    trMinutesTillTrain="Please Check Your Input";
   }
   // console.log(nextArrival)
   // Add each train's data into the table
